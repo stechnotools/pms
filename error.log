@@ -1,0 +1,4 @@
+[Thu Feb 02 22:41:07.290674 2023] [php7:notice] [pid 3972:tid 1968] [client 127.0.0.1:50377] PHP Parse error:  syntax error, unexpected '}' in D:\\xampp74\\htdocs\\pms\\app\\Views\\errors\\html\\error_404.php on line 51, referer: http://pms.stechnotools.com/projects
+[Thu Feb 02 22:41:12.605078 2023] [php7:notice] [pid 3972:tid 1968] [client 127.0.0.1:50377] PHP Fatal error:  Exception thrown without a stack frame in Unknown on line 0, referer: http://pms.stechnotools.com/projects
+[Thu Feb 02 22:41:19.330587 2023] [php7:notice] [pid 3972:tid 1992] [client 127.0.0.1:50378] PHP Parse error:  syntax error, unexpected '}' in D:\\xampp74\\htdocs\\pms\\app\\Views\\errors\\html\\error_404.php on line 51, referer: http://pms.stechnotools.com/projects
+[Thu Feb 02 22:41:23.891089 2023] [php7:notice] [pid 3972:tid 1992] [client 127.0.0.1:50378] PHP Fatal error:  Exception thrown without a stack frame in Unknown on line 0, referer: http://pms.stechnotools.com/projects

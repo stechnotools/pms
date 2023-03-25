@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<project name="C:\laragon\www\pms\pms.clpprj">
+ <settings>
+  <PM_URL><![CDATA[http://localhost/C:/laragon/www/pms]]></PM_URL>
+  <PM_HOME_URL><![CDATA[http://localhost/C:/laragon/www/pms]]></PM_HOME_URL>
+  <PM_LIBS><![CDATA[]]></PM_LIBS>
+  <PM_FTP_CONNECTION><![CDATA[]]></PM_FTP_CONNECTION>
+  <PM_FTP_DIR><![CDATA[]]></PM_FTP_DIR>
+  <PM_FTP_UPLOAD_ON_SAVE><![CDATA[INT:0]]></PM_FTP_UPLOAD_ON_SAVE>
+  <PM_LANGUAGE><![CDATA[]]></PM_LANGUAGE>
+ </settings>
+ <removed value=";"/>
+ <added value=""/>
+ <lastopfiles>
+  <file name="C:\laragon\www\pms\admin\Team\Controllers\Team.php"/>
+  <file name="C:\laragon\www\pms\admin\Team\Models\TeamModel.php"/>
+  <file name="C:\laragon\www\pms\admin\Project\Models\ProjectModel.php"/>
+  <lastactivefile name=""/>
+ </lastopfiles>
+ <errors version="1.12.0"/>
+</project>
