@@ -128,3 +128,7 @@ nb-configuration.xml
 /phpunit*.xml
 /.phpunit.*.cache
 
+
+public/
+doc/
+writable/
