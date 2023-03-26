@@ -338,6 +338,10 @@ class User
         return $this->lastname;
     }
 
+    public function getName(){
+        return $this->firstname.' '.$this->lastname;
+    }
+
     public function getEmail() {
         return $this->email;
     }

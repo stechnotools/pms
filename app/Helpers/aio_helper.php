@@ -1160,3 +1160,51 @@ if (!function_exists('initialName')) {
         return makeInitialsFromSingleWord($name);
     }
 }
+
+if(!function_exists('greetingTime')){
+    function greetingTime(){
+        date_default_timezone_set("Asia/Kolkata");  
+        $hour = date('G');
+        $message="";
+        if( $hour > 6 && $hour <= 11) {
+            $message= "Good Morning";
+          }
+          else if($hour > 11 && $hour <= 16) {
+            $message= "Good Afternoon";
+          }
+          else if($hour > 16 && $hour <= 23) {
+            $message= "Good Evening";
+          }
+          else {
+            $message= "Why aren't you asleep?  Are you programming?";
+          }
+        return $message;
+    }
+}
+
+if(!function_exists('inspirationMeassage_old')){
+    function inspirationMeassage(){
+        $url="https://type.fit/api/quotes";
+        $data=json_decode(file_get_contents($url));
+        $message=$data[array_rand($data)]; 
+
+        $html='<blockquote class="blockquote">
+                    <p class="mb-0">'.$message->text.'</p>
+                </blockquote>
+                <figcaption class="blockquote-footer">'.$message->author.'</figcaption>';
+        return $html;
+    }
+}
+
+if(!function_exists('inspirationMeassage')){
+    function inspirationMeassage(){
+        $url="https://api.quotable.io/random";
+        $message=json_decode(file_get_contents($url));
+        
+        $html='<blockquote class="blockquote">
+                    <p class="mb-0">'.$message->content.'</p>
+                </blockquote>
+                <figcaption class="blockquote-footer">'.$message->author.'</figcaption>';
+        return $html;
+    }
+}

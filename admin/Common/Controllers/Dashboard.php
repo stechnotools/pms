@@ -15,71 +15,21 @@ class Dashboard extends AdminController
 	public function index()
 	{
 
-
         $data['breadcrumbs'] = array();
         $data['breadcrumbs'][] = array(
             'text' => "Home",
             'href' => admin_url('')
         );
         $data['breadcrumbs'][] = array(
-            'text' => lang('Project.heading_title'),
-            'href' => admin_url('project')
+            'text' => 'My Dashboard',
+            'href' => admin_url('')
         );
 
-        $data['heading_title'] = lang('Project.heading_title');
+        $data['heading_title'] = "My Dashboard";
         
-        $settingModel=new SettingModel();
-        $dashboards = array();
-        $extensions = $settingModel->getDashboardReports();
-
-        foreach ($extensions as $code) {
-
-                /*$class = '\\Admin\\Report\\Controllers\\' . $code->name;
-                $obj = new $class();
-                $output=$obj->index();*/
-                //$output=view_cell('Admin\Report\Controllers\\'.$code->name.'::index');
-
-
-                $dashboards[] = array(
-                    'name'          => $code->name,
-                    'route'         => $code->route,
-                    'width'         => $code->col,
-                    'sort_order'    => $code->order,
-                    'url'           => admin_url($code->route)."?filter=".$code->filter."&download=".$code->download
-                );
-
-
-        }
-
-        $sort_order = array();
-
-        foreach ($dashboards as $key => $value) {
-            $sort_order[$key] = $value['sort_order'];
-        }
-
-        array_multisort($sort_order, SORT_ASC, $dashboards);
-
-        // Split the array so the columns width is not more than 12 on each row.
-        $width = 0;
-        $column = array();
-        $data['rows'] = array();
-
-        foreach ($dashboards as $dashboard) {
-            $column[] = $dashboard;
-
-            $width = ($width + $dashboard['width']);
-
-            if ($width >= 12) {
-                $data['rows'][] = $column;
-
-                $width = 0;
-                $column = array();
-            }
-        }
-
-        if (!empty($column)) {
-            $data['rows'][] = $column;
-        }
+        
+        $data['user_greeting']=greetingTime().', '.$this->user->getName();
+        $is=inspirationMeassage();
 
 	   // printr($data);
 		return $this->template->view('Admin\Common\Views\dashboard',$data);

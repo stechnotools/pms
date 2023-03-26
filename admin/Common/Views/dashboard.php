@@ -1,117 +1,84 @@
+<div class="row mb-4">
+    <div class="col-12 text-center">
+        <h3>Sunday, March 26</h3>
+        <h2><?=$user_greeting?></h2>
+        <p><?=inspirationMeassage();?></p>
+        </div>
+</div>
+
+
+
 <div class="row mb-2">
-    <div class="col-sm-6 col-lg-3">
+    <div class="col-sm-6 col-lg-2">
         <div class="card rounded-0 shadow-none m-0 color-div" >
-            <div class="card-body text-center">
+            <div class="card-body px-0 text-center">
                 <i class="ri-briefcase-line text-muted font-24"></i>
                 <h3><span>29</span></h3>
-                <p class="text-muted font-15 mb-0">Total Projects</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-sm-6 col-lg-3">
-        <div class="card rounded-0 shadow-none m-0 border-start  color-div">
-            <div class="card-body text-center">
-                <i class="ri-list-check-2 text-muted font-24"></i>
-                <h3><span>715</span></h3>
                 <p class="text-muted font-15 mb-0">Total Tasks</p>
             </div>
         </div>
     </div>
 
-    <div class="col-sm-6 col-lg-3">
+    <div class="col-sm-6 col-lg-2">
+        <div class="card rounded-0 shadow-none m-0 border-start  color-div">
+            <div class="card-body px-0 text-center">
+                <i class="ri-list-check-2 text-muted font-24"></i>
+                <h3><span>715</span></h3>
+                <p class="text-muted font-15 mb-0">Open Tasks</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6 col-lg-2">
         <div class="card rounded-0 shadow-none m-0 border-start color-div">
-            <div class="card-body text-center">
+            <div class="card-body px-0 text-center">
                 <i class="ri-group-line text-muted font-24"></i>
                 <h3><span>31</span></h3>
-                <p class="text-muted font-15 mb-0">Members</p>
+                <p class="text-muted font-15 mb-0">Completed Task</p>
             </div>
         </div>
     </div>
 
-    <div class="col-sm-6 col-lg-3">
+    <div class="col-sm-6 col-lg-2">
+        <div class="card rounded-0 shadow-none m-0 border-start color-div">
+            <div class="card-body px-0 text-center">
+                <i class="ri-group-line text-muted font-24"></i>
+                <h3><span>31</span></h3>
+                <p class="text-muted font-15 mb-0">Pending Task</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6 col-lg-2">
         <div class="card rounded-0 shadow-none m-0 border-start  color-div">
-            <div class="card-body text-center">
+            <div class="card-body px-0 text-center">
                 <i class="ri-line-chart-line text-muted font-24"></i>
                 <h3><span>93%</span> <i class="mdi mdi-arrow-up text-success"></i></h3>
-                <p class="text-muted font-15 mb-0">Productivity</p>
+                <p class="text-muted font-15 mb-0">Overdue Task</p>
             </div>
         </div>
     </div>
 
+    <div class="col-sm-6 col-lg-2">
+        <div class="card rounded-0 shadow-none m-0 border-start  color-div">
+            <div class="card-body px-0 text-center">
+                <i class="ri-line-chart-line text-muted font-24"></i>
+                <h3><span>93%</span> <i class="mdi mdi-arrow-up text-success"></i></h3>
+                <p class="text-muted font-15 mb-0">Total Project</p>
+            </div>
+        </div>
+    </div>
                
 </div>
 <!-- end row-->
 
 
 <div class="row">
-    <div class="col-lg-4">
-        <div class="card">
-            <div class="card-header d-flex justify-content-between align-items-center">
-                <h4 class="header-title">Project Status</h4>
-                <div class="dropdown">
-                    <a href="#" class="dropdown-toggle arrow-none card-drop" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="mdi mdi-dots-vertical"></i>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-end">
-                        <!-- item-->
-                        <a href="javascript:void(0);" class="dropdown-item">Weekly Report</a>
-                        <!-- item-->
-                        <a href="javascript:void(0);" class="dropdown-item">Monthly Report</a>
-                        <!-- item-->
-                        <a href="javascript:void(0);" class="dropdown-item">Action</a>
-                        <!-- item-->
-                        <a href="javascript:void(0);" class="dropdown-item">Settings</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card-body pt-0">
-                <div class="mt-3 mb-4 chartjs-chart" style="height: 204px;">
-                    <canvas id="project-status-chart" data-colors="#0acf97,#727cf5,#fa5c7c" style="box-sizing: border-box; display: block; height: 204px; width: 283px;" width="283" height="204"></canvas>
-                </div>
-
-                <div class="row text-center mt-2 py-2">
-                    <div class="col-sm-4">
-                        <div class="my-2 my-sm-0">
-                            <i class="mdi mdi-trending-up text-success mt-3 h3"></i>
-                            <h3 class="fw-normal">
-                                <span>64%</span>
-                            </h3>
-                            <p class="text-muted mb-0">Completed</p>
-                        </div>
-
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="my-2 my-sm-0">
-                            <i class="mdi mdi-trending-down text-primary mt-3 h3"></i>
-                            <h3 class="fw-normal">
-                                <span>26%</span>
-                            </h3>
-                            <p class="text-muted mb-0"> In-progress</p>
-                        </div>
-
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="my-2 my-sm-0">
-                            <i class="mdi mdi-trending-down text-danger mt-3 h3"></i>
-                            <h3 class="fw-normal">
-                                <span>10%</span>
-                            </h3>
-                            <p class="text-muted mb-0"> Behind</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- end row-->
-
-            </div> <!-- end card body-->
-        </div> <!-- end card -->
-    </div><!-- end col-->
-
+    
     <div class="col-lg-8">
         <div class="card">
             <div class="card-header d-flex justify-content-between align-items-center">
-                <h4 class="header-title">Tasks</h4>
+                <h4 class="header-title">My Tasks</h4>
                 <div class="dropdown">
                     <a href="#" class="dropdown-toggle arrow-none card-drop" data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="mdi mdi-dots-vertical"></i>
@@ -231,6 +198,60 @@
             </div> <!-- end card body-->
         </div> <!-- end card -->
     </div><!-- end col-->
+    <div class="col-lg-4">                    
+        <!-- Todo-->
+        <div class="card">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <h4 class="header-title">My Todo Items</h4>
+                <div class="dropdown float-end">
+                    <a href="#" class="dropdown-toggle arrow-none card-drop" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="mdi mdi-dots-vertical"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end">
+                        <!-- item-->
+                        <a href="javascript:void(0);" class="dropdown-item">Settings</a>
+                        <!-- item-->
+                        <a href="javascript:void(0);" class="dropdown-item">Action</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="todoapp">
+                <div class="card-body py-0">
+                    <div class="row">
+                        <div class="col">
+                            <h5 id="todo-message"><span id="todo-remaining">3</span> of <span id="todo-total">7</span> remaining</h5>
+                        </div>
+                        <div class="col-auto">
+                            <a href="" class="float-end btn btn-light btn-sm" id="btn-archive">Archive</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-body py-0 mb-0" style="max-height: 298px;" data-simplebar="init"><div class="simplebar-wrapper" style="margin: 0px -24px;"><div class="simplebar-height-auto-observer-wrapper"><div class="simplebar-height-auto-observer"></div></div><div class="simplebar-mask"><div class="simplebar-offset" style="right: 0px; bottom: 0px;"><div class="simplebar-content-wrapper" tabindex="0" role="region" aria-label="scrollable content" style="height: auto; overflow: hidden scroll;"><div class="simplebar-content" style="padding: 0px 24px;">
+                    <ul class="list-group list-group-flush todo-list" id="todo-list"><li class="list-group-item border-0 ps-0"><div class="form-check mb-0"><input type="checkbox" class="form-check-input todo-done" id="7" checked=""><label class="form-check-label" for="7"><s>Build an angular app</s></label></div></li><li class="list-group-item border-0 ps-0"><div class="form-check mb-0"><input type="checkbox" class="form-check-input todo-done" id="6"><label class="form-check-label" for="6">Create new version 3.0</label></div></li><li class="list-group-item border-0 ps-0"><div class="form-check mb-0"><input type="checkbox" class="form-check-input todo-done" id="5"><label class="form-check-label" for="5">Hehe!! This looks cool!</label></div></li><li class="list-group-item border-0 ps-0"><div class="form-check mb-0"><input type="checkbox" class="form-check-input todo-done" id="4" checked=""><label class="form-check-label" for="4"><s>Testing??</s></label></div></li><li class="list-group-item border-0 ps-0"><div class="form-check mb-0"><input type="checkbox" class="form-check-input todo-done" id="3" checked=""><label class="form-check-label" for="3"><s>Creating component page</s></label></div></li><li class="list-group-item border-0 ps-0"><div class="form-check mb-0"><input type="checkbox" class="form-check-input todo-done" id="2" checked=""><label class="form-check-label" for="2"><s>Build a js based app</s></label></div></li><li class="list-group-item border-0 ps-0"><div class="form-check mb-0"><input type="checkbox" class="form-check-input todo-done" id="1"><label class="form-check-label" for="1">Design One page theme</label></div></li></ul>
+                </div></div></div></div><div class="simplebar-placeholder" style="width: auto; height: 319px;"></div></div><div class="simplebar-track simplebar-horizontal" style="visibility: hidden;"><div class="simplebar-scrollbar" style="width: 0px; display: none;"></div></div><div class="simplebar-track simplebar-vertical" style="visibility: visible;"><div class="simplebar-scrollbar" style="height: 278px; transform: translate3d(0px, 0px, 0px); display: block;"></div></div></div>
+
+                <div class="card-body pt-2">
+                    <form name="todo-form" id="todo-form" class="needs-validation" novalidate="">
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" id="todo-input-text" name="todo-input-text" class="form-control" placeholder="Add new todo" required="">
+                                <div class="invalid-feedback">
+                                    Please enter your task name
+                                </div>
+                            </div>
+                            <div class="col-auto d-grid">
+                                <button class="btn-primary btn-md btn waves-effect waves-light" type="submit" id="todo-btn-submit">Add</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div> <!-- end .todoapp-->                                    
+        </div> <!-- end card-->
+     
+    </div><!-- end col-->
+
 </div>
 <!-- end row-->
 
