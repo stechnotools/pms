@@ -14,7 +14,9 @@ $user=service('user');
 
 </div><!-- END wrapper -->
 <script src="<?=theme_url('assets/js/vendor.min.js');?>"></script>
-<script src="<?=theme_url('assets/js/loadingoverlay.min.js');?>"></script>
+
+<script src="//cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.7/dist/loadingoverlay.min.js"></script>
+
 <script src="<?=theme_url('assets/js/jquery-autotextcolor.js');?>"></script>
 <script src="<?=theme_url('assets/js/app.min.js');?>"></script>
 <script src="<?=theme_url('assets/js/common.js');?>"></script>
